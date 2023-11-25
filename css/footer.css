@@ -1,0 +1,145 @@
+footer {
+    background: var(--secundario);
+    padding-top: 3rem;
+}
+
+.footer-container {
+    width: 95%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.footer-top {
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.columna {
+    position: relative;
+}
+
+.columna>h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.columna>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.columna>ul>li {
+    margin-bottom: 10px;
+    font-size: .9rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.libro {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.payment-methods {
+    margin: 50px auto;
+    padding: 25px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+.contacto {
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto>div {
+    padding: 0 2rem;
+    border-left: 2px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.contacto>div:first-child {
+    border-left: none;
+}
+
+.contacto p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-bottom {
+    background: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-bottom>p {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footer-top>div:last-child {
+        grid-column: 1 / 3;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto>div {
+        border: none;
+    }
+
+    .contacto p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:500px) {
+    .footer-top {
+        padding: 0 15px;
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+    }
+
+    .payment-methods img:last-child {
+        grid-column: 1/3
+    }
+}

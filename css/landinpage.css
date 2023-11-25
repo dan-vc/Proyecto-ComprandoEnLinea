@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.fondo{
+    background: linear-gradient(to right, rgb(244, 162, 255), #892fff);
+    width: 100%;
+    height: 500px;
+}
+.logo{
+    width: 20%;
+    margin-left: 80px;
+}
+.inicio{
+    margin-left: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.cuadro{
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 8%;
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+button{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 35px;
+    color: rgb(0, 191, 255);
+    font-size: 20px;
+    border: none;
+    border: 2px solid rgb(0, 191, 255);
+    cursor: pointer;
+}
+.formulario{
+    background: linear-gradient(to right, rgb(162, 173, 255), #b984ff);
+    width: 30%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(95, 95, 95, 0.5);
+    margin-left: 55%;
+    margin-top: -21%;
+    height: 500px;
+}
+input{
+    height: 30px;
+    padding-left: 10px;
+    width: 250px;
+}
+.enviar{
+    padding-right: 10px;
+    width: 120px;
+    text-align: center;
+    height: 35px;
+    border: none;
+    border: 0.5px solid rgb(27, 27, 27);
+    border-radius: 3px;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.modelo{
+    height: 557px;
+    margin-top: -466px;
+    margin-left: 326px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
